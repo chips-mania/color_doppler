@@ -1,0 +1,32 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;  /* 왼쪽과 오른쪽 패널을 좌우로 배치 */
+  align-items: flex-start;        /* 상단 정렬 */
+  gap: 20px;                      /* 두 패널 사이에 간격 */
+}
+
+.left-panel {
+  flex: 1;                         /* 왼쪽 패널을 1:1 비율로 설정 */
+}
+
+.right-panel {
+  flex: 1.5;                       /* 오른쪽 패널을 왼쪽보다 약간 더 크게 설정 */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
