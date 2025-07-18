@@ -7,7 +7,7 @@ const ThresholdSlider = ({ threshold, onThresholdChange, v_min, v_max, onVMinCha
     <div style={{ marginTop: '20px' }}>
       <div>
         <label>
-          채도 기준 (S): <strong>{threshold}</strong>
+          Saturation Criteria (S): <strong>{threshold}</strong>
         </label>
         <br />
         <input

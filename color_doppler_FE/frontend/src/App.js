@@ -33,7 +33,7 @@ function App() {
   // 분석 요청
   const handleAnalyze = async () => {
     if (!filename || !selectedArea) {
-      alert("이미지 업로드와 영역 선택이 필요합니다.");
+      alert("Image upload and area selection are required.");
       return;
     }
 
@@ -47,14 +47,14 @@ function App() {
       });
       setResult(res.data);
     } catch (err) {
-      console.error("분석 요청 실패:", err);
-      alert("이미지 분석에 실패했습니다.");
+      console.error("Analysis request failed:", err);
+      alert("Image analysis failed.");
     }
   };
 
   return (
     <div className="App">
-      <h2>초음파 이미지 채도 분석</h2>
+      <h2>Ultrasound Image Saturation Analysis</h2>
 
       <div className="container">
         {/* 왼쪽 - 이미지 업로드 */}
@@ -78,7 +78,7 @@ function App() {
                 onVMaxChange={handleVMaxChange}
               />
               <button onClick={handleAnalyze} style={{ marginTop: '20px' }}>
-                분석하기
+                Analyze
               </button>
             </>
           )}

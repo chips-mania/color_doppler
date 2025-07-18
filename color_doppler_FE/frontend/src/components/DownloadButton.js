@@ -16,7 +16,7 @@ const DownloadButton = ({ url }) => {
           borderRadius: '6px'
         }}
       >
-        📥 추출 이미지 다운로드
+        Download Extracted Image
       </a>
     </div>
   );
